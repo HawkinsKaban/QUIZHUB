@@ -1,6 +1,8 @@
 package quizhub.Model;
 
 public abstract class User {
+    private int id;
+    private String nama;
     private String username;
     private String password;
 

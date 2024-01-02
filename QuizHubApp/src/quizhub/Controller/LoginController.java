@@ -65,13 +65,9 @@ public class LoginController {
 
         try {
             switch (role) {
-                case "Admin":
-                    new AdminView().setVisible(true);
-                    break;
-                case "Dosen":
-                    new DosenView().setVisible(true);
-                    break;
-                default:
+                case "Admin" -> new AdminView().setVisible(true);
+                case "Dosen" -> new DosenView().setVisible(true);
+                default -> {
                     ResultSet rs = koneksi.stm.executeQuery(sql);
 
                     if (rs.next()) {
@@ -82,7 +78,7 @@ public class LoginController {
                     } else {
                         JOptionPane.showMessageDialog(login, "Failed to retrieve user information");
                     }
-                    break;
+                }
             }
 
             login.dispose(); // Close the login window
