@@ -923,7 +923,7 @@ public class Soal extends javax.swing.JFrame {
             
             int nilai=total_benar*10;
             
-            sql="insert into nilai set npm='"+nim1+"',nama='"+nama1+"',score='"+nilai+"',token='"+jLabel2.getText()+"'";
+            sql="insert into nilai set nim='"+nim1+"',nama='"+nama1+"',score='"+nilai+"',token='"+jLabel2.getText()+"'";
             stat.executeUpdate(sql);
             jLayeredPane1.setVisible(false);
             jLabel17.setVisible(false);
