@@ -1,13 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package quizhub.Model;
 
-/**
- *
- * @author rayka
- */
+import java.util.Date;
+
 public class Kuis {
+    private String namaQuiz;
+    private Date waktuDimulai;
+    private Date waktuKadaluarsa;
+    private int durasi;
+
+    public Kuis(String namaQuiz, Date waktuDimulai, Date waktuKadaluarsa, int durasi) {
+        this.namaQuiz = namaQuiz;
+        this.waktuDimulai = waktuDimulai;
+        this.waktuKadaluarsa = waktuKadaluarsa;
+        this.durasi = durasi;
+    }
+    
+    
     
 }
