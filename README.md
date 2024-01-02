@@ -13,3 +13,4 @@ Berikut adalah langkah-langkah untuk menjalankan aplikasi QuizHub:
 5. Jalankan aplikasi melalui NetBeans.
 
 **Catatan:** Jika import database ke XAMPP gagal, buatlah database baru terlebih dahulu dengan nama 'quizhub', lalu import database ke sana.
+disusahakan menggunakan JDK 21
